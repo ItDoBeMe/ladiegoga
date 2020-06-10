@@ -1,0 +1,3 @@
+Michael Jackson | Thriller | Pop | 1982 | Epic | C:\xampp\htdocs\A13\img\Thriller.png
+AC/DC | Back in black | Hard rock | 1980 | Albert | C:\xampp\htdocs\A13\img\backinblack.png
+Adele | 21 | Pop | 2011 | XL | C:\xampp\htdocs\A13\img\21.png

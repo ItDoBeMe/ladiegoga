@@ -1,0 +1,3 @@
+NI123LE | Audi | 2012 | crvena
+BG321FS | Fiat | 2015 | crna
+ST456IC | Reno | 2016 | siva
