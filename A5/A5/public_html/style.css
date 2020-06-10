@@ -1,0 +1,9 @@
+
+table, th, td {
+  border: 5px solid white;
+  padding: 5px;
+}
+
+td:hover{
+    cursor: pointer;
+}

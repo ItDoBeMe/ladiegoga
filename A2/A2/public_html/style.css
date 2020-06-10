@@ -1,0 +1,19 @@
+
+#galerija{
+    width:640px;
+    height:480px;
+    margin:0 auto;
+    padding: 20px;
+}
+
+#glavna{
+    width:320px;
+    height:200px;
+    margin:5px;
+}
+
+.mala{
+    margin:1px;
+    width:64px;
+    height:40px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container bg-light p-4 text-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Uputstvo.html">Uputstvo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Oautoru.html">O autoru</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="poz" class="container text-center">
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="srbija" src="slike/srbija.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="madjarska" src="slike/madjarska.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="rumunija" src="slike/rumunija.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="bugarska" src="slike/bugarska.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="smakedonija" src="slike/smakedonija.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="albanija" src="slike/albanija.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="cg" src="slike/cg.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="bih" src="slike/bih.jpg" />
+                <img data-toggle="modal" data-target="#exampleModal" class="zastava" id="hrvatska" src="slike/hrvatska.jpg" />
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="naslov">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="gg"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            var zvuk = ["zvuk/srbija.mp3", "zvuk/madjarska.mp3", "zvuk/rumunija.mp3", "zvuk/bugarska.mp3", "zvuk/smakedonija.mp3", "zvuk/albanija.mp3", "zvuk/cg.mp3", "zvuk/bih.mp3", "zvuk/hrvatska.mp3"];
+            var drzava = ["Srbija", "Madjarska", "Rumunija", "Bugarska", "Severna Makedonija", "Albanija", "Crna Gora", "Bosna i Hercegovina", "Hrvatska"];
+            var opis = ["Glavni grad: Beograd", "Glavni grad: Budimpešta", "Glavni grad: Bukurešt", "Glavni grad: Sofija", "Glavni grad: Skoplje", "Glavni grad: Tirana", "Glavni grad: Podgorica", "Glavni grad: Sarajevo", "Glavni grad: Zagreb"];
+            naslov = $("#naslov");
+            gg = $("#gg");
+
+            $(".zastava").click(function () {
+                index = $(".zastava").index(this);
+                naslov.text(drzava[index]);
+                gg.text(opis[index]);
+            });
+
+            $(".zastava").hover(function () {
+                index = $(".zastava").index(this);
+                var himna = new Audio(zvuk[index]);
+                himna.play();
+            }, false);
+
+        </script>
+    </body>
+</html>

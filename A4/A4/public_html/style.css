@@ -1,0 +1,65 @@
+
+#poz{
+    background-image: url('slike/pozadina.jpg');
+    background-size: cover;
+    height: 600px;
+    position:relative;
+}
+
+.zastava{
+    width:80px;
+}
+
+#srbija{
+    position: absolute;
+    top: 268px;
+    left: 490px;
+}
+
+#bih{
+    position: absolute;
+    top: 268px;
+    left: 360px;
+}
+
+#madjarska{
+    position: absolute;
+    top: 108px;
+    left: 410px;
+}
+
+#hrvatska{
+    position: absolute;
+    top: 208px;
+    left: 260px;
+}
+
+#cg{
+    position: absolute;
+    top: 358px;
+    left: 410px;
+}
+
+#albanija{
+    position: absolute;
+    top: 458px;
+    left: 440px;
+}
+
+#smakedonija{
+    position: absolute;
+    top: 420px;
+    left: 530px;
+}
+
+#bugarska{
+    position: absolute;
+    top: 348px;
+    left: 660px;
+}
+
+#rumunija{
+    position: absolute;
+    top: 178px;
+    left: 660px;
+}

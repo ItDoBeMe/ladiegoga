@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-dark">
+        <div class="container my-5 bg-light p-5 rounded text-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Uputstvo.html">Uputstvo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Oautoru.html">O autoru</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4 text-center">
+                    <table id="myTable" class="table table-light">
+
+                    </table>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="broj">Broj sedišta</label>
+                    <input type="text" id="broj" class="form-control" value="" readonly/>
+                </div>
+                <div class="col-4 text-center">
+                    <label for="ip">Ime i prezime</label>
+                    <input type="text" id="ip" class="form-control" value="" />
+                </div>
+                <div class="col-4">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" value="" />
+                </div>
+                <div class="my-3 col-12">
+                    <input type="button" class="btn btn-block btn-info" id="rez" value="Rezervišite" />
+                </div>
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
