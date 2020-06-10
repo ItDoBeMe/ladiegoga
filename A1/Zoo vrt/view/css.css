@@ -1,0 +1,9 @@
+table,tr,td {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px dotted white;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:hover {background-color:gray;}

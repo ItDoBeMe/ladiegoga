@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script>
+function opis1()
+{
+prozor=window.open("","slon","width=400, height=300");
+prozor.document.write("Slon Mimi je stara 7 godina.Slonovi su velike životinje iz familije Elephantidae iz reda Proboscidea. Tri vrste su trenutno priznate: afrički slon (Loxodonta africana), afrički šumski slon (L. cyclotis), i azijski slon (Elephas maximus).Slonovi su biljojedi i prisutni su u različitim staništima uključujući savane, šume, pustinje, i močvare. Oni preferiraju da obitavaju u blizini vode. Oni se smatraju ključnom vrstom usled njihovog velikog impakta na njihovo životno okružunje.");
+}
+
+function opis2()
+{
+prozor=window.open("","lav","width=400, height=300");
+prozor.document.write("Lav Džek je star 3 godine i ima svoju lavicu Sanu. Lav (lat. Panthera leo) je veliki sisar iz porodice mačaka (Felidae) i jedan od „velikih mačaka“ roda Panthera. Mužjak lava, lako prepoznatljiv po svojoj grivi, u proseku teži između 180-255 kilograma. Ženke su manje i teže od 110-155 kilograma. U divljini, lavovi žive oko 10-18 godina, dok u zatočeništvu preko 20 godina.");
+}
+
+function opis3()
+{
+prozor=window.open("","zmija","width=400, height=300");
+prozor.document.write("Zmija Zaza je kod nas tek 4 meseca. Zmije su izduženi, beznogi, mesojedni reptili iz reda Serpentes. Poput svih skvimata, zmije su ektotermna, amniotni kičmenjaci pokriveni preklapajućim lustrama. Mnoge vrste zmija imaju lobanje sa nekoliko dodatnih zglobova u odnosu na njihove gušterske pretke, što im omogućava da progutaju plen koji je znatno veći od njihove glave zahvaljujući njihovim visoko mobilnim vilicama.");
+}
+
+function opis4()
+{
+prozor=window.open("","medved","width=400, height=300");
+prozor.document.write("Medved Kim je star 3 godine. Medvedi su porodica krupnih sisara iz reda zveri. Medvedi žive u različitim staništima, od tropskih do polarnih i od planinskih do ravničarskih. Od staništa zavisi način ishrane medveda, mada je većina vrsta medveda omnivorna. Najveći broj vrsta medveda se hrani korenjem, bobicama, ribom.");
+}
+function opis5()
+{
+prozor=window.open("","vuk","width=400, height=300");
+prozor.document.write("Vuk Sokica je stara 4 godine. Vuk (Canis lupus) je vrsta pasa iz roda Canis. Veličina i težina vukova se jako razlikuje jer nastanjuju vrlo velika i različita područja. Ženke su oko 2 do 12% manje od mužjaka i 20 do 25% lakše od njih.");
+
+}
+
+</script>
+  <style>
+        body {
+          background: url('https://images.unsplash.com/photo-1521706862577-47b053587f91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80');
+          background-size: auto;
+        }
+        p{
+        	color: white;
+        }
+        
+        </style>
+
+</head>
+<head>
+<script language="javascript" type="text/javascript">
+function over1()
+{
+var snd = new Audio("zvuk/ele.mp3"); 
+snd.play();
+}
+function over2()
+{
+var snd = new Audio("zvuk/lion.mp3"); 
+snd.play();
+}
+function over3()
+{
+var snd = new Audio("zvuk/snake.mp3"); 
+snd.play();
+}
+function over4()
+{
+var snd = new Audio("zvuk/bear.mp3"); 
+snd.play();
+}
+function over5()
+{
+var snd = new Audio("zvuk/wolf.mp3"); 
+snd.play();
+}
+</script>
+</head>
+<body>
+<h1><kbd>Zoo vrt</kbd></h1>
+<img src="https://www.iconsdb.com/icons/preview/white/elephant-7-xxl.png" style="height: 200px; margin-right: 30px;" onMouseOver="over1()"  onclick="opis1()">
+<img src="https://www.iconsdb.com/icons/preview/white/lion-xxl.png" style="height: 200px; margin-right: 30px;" onclick="opis2()" onMouseOver="over2()">
+<br>
+<img src="https://www.iconsdb.com/icons/preview/white/snake-3-xxl.png" style="height: 200px; margin-right: 30px;" onclick="opis3()" onMouseOver="over3()">
+<img src="https://www.iconsdb.com/icons/preview/white/bear-2-xxl.png" style="height: 200px; margin-right: 30px;"  onclick="opis4()" onMouseOver="over4()">
+<img src="https://www.iconsdb.com/icons/preview/white/wolf-xxl.png"  style="height: 200px; margin-right: 30px;" onclick="opis5()" onMouseOver="over5()"><br>
+<a href="pocetna.html" class="text-muted"><h2><kbd>Početna</kbd></h2></a>
+</body>
+</html>
